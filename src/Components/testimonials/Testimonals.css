@@ -1,0 +1,120 @@
+.testimonals{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+     h1 {
+      font-size: 50px;
+    }
+    .testimonals-container{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .testimonals-card{
+            width: 250px;
+            height: 70%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px -8px black;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            padding: 20px;
+            transition: all 1s ease;
+          
+            &.featured{
+                width: 300px;
+                height: 75%;
+                margin: 0 30px;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            .top{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    &.left,&.right{
+                        height: 25px;
+
+                    }
+                    &.user{
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        padding: 0 30px;
+                    }
+                }
+            }
+            .center{
+                padding: 10px;
+                background-color: rgb(235,225,227);
+                border-radius: 10px;
+            }
+            .bottom{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+                h2{
+                    margin-bottom: 5px;
+                }
+                h3{
+                    color: rgb(138, 138, 138);
+                }
+            }
+        }
+    }
+}
+@media (max-width:800px) {
+    .testimonals{
+        justify-content: space-around;
+        h1{
+            font-size: 25px;
+            overflow: hidden;
+        }
+        .testimonals-container{
+            flex-direction: column;
+            height: 100%;
+            
+            .testimonals-card{
+                height: 180px;
+                margin: 10px 0;
+
+                &.featured{
+                    width: 250px;
+                    height: 180px;
+                    margin: 1px;
+                }
+
+                .center{
+                    display: none;
+                }
+            }
+        }
+    }
+    .user{
+        width: 30px;
+        height: 30px;
+    }
+    .center{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .bottom{
+        h2{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 12px;
+        }
+    }
+}

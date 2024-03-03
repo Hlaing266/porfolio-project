@@ -1,0 +1,151 @@
+.topbar{
+    width: 100%;
+    height:80px ;
+    /*background-color: #15023a;*/
+    background-color: white;
+    position: fixed;
+    color: #15023a;
+    top: 0;
+    z-index: 2;
+    transition: all 1s ease;
+
+    
+}
+.wapper{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*top bar left style*/
+.left{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+   color: #15023a; 
+    text-decoration: none;
+    margin-right: 30px;
+}
+.itemContainer{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.itemContainer span{
+    font-size: 15px;
+    font-weight: 500;
+}
+/*top bar right style*/
+
+
+.down-popup input{
+    display: none;
+}
+.down-popup label{
+    display: flex;
+    align-items: center;
+}
+
+.hanburgermenu {
+    width: 35px;
+    height: 20px;
+    margin-right: 10px;
+    transition: all 0.5s;
+    scrollbar-width: none;
+  }
+.hanburgermenu span{
+    width: 100%;
+    height: 3px;
+    margin-bottom: 4px;
+    display: block;
+    background-color: #15023a;
+    transform-origin: left;
+    transition: all 1s ease;
+}
+.down-popup  .popup-menu-list{
+    position: fixed;
+    top:80px;
+    background-color: #15023a;
+    right: 20px;
+    height: 100vh;
+    margin-right: -20px;
+    transform: translateX(300px);
+    transition: all 0.5s ease;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popup-menu-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    margin-top: -50px;
+    width: 70%;
+}
+.popup-menu-list ul li{
+    margin-bottom: 30px;
+}
+
+.popup-menu-list ul li a{
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+.popup-menu-list ul li a:hover{
+    font-weight: 700;
+}
+.change{
+    background-color: #15023a;
+    color: white;
+
+    .logo{
+        color: white;
+    }
+    .first{
+        background-color: white;
+        transform: rotate(45deg);
+        margin-top: -4px;
+     }
+     .mid{
+        opacity: 0;
+     }
+     .end{
+        background-color: white;
+        transform: rotate(-45deg);
+        margin-top: 15px;
+     }
+    .popup-menu-list{
+        transform: translateX(0);
+    
+        
+     }
+    
+}
+@media (max-width:800px) {
+    .itemContainer{
+        display: none;
+    }
+    label h2{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
